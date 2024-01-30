@@ -10,6 +10,9 @@ app.use(bodyParser.json());
 app.set('views', './views');
 
 app.get('/', function (req, res) {
+  res.send('Hello Merveille');
+})
+app.get('/hello2', function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 })
 
