@@ -6,6 +6,12 @@
   "scripts": {
     "start": "node index.js"
   },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "vercel-sapper"
+    }
+  ],
   "dependencies": {
     "body-parser": "1.19.0",
     "chai": "4.3.4",
